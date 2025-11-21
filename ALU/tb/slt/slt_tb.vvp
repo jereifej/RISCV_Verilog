@@ -1,0 +1,108 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 5;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_0000024a14dfa0c0 .scope module, "slt_tb" "slt_tb" 2 3;
+ .timescale -3 -5;
+v0000024a14e37690_0 .var/s "a", 63 0;
+v0000024a14e37730_0 .var/s "b", 63 0;
+v0000024a14e377d0_0 .net "y", 0 0, L_0000024a14e37910;  1 drivers
+S_0000024a14e347c0 .scope module, "dut" "slt" 2 7, 3 1 0, S_0000024a14dfa0c0;
+ .timescale -3 -5;
+    .port_info 0 /INPUT 64 "a";
+    .port_info 1 /INPUT 64 "b";
+    .port_info 2 /OUTPUT 1 "y";
+v0000024a14df7290_0 .net *"_ivl_0", 0 0, L_0000024a14e37870;  1 drivers
+L_0000024a14e93ff8 .functor BUFT 1, C4<1>, C4<0>, C4<0>, C4<0>;
+v0000024a14e34950_0 .net/2u *"_ivl_2", 0 0, L_0000024a14e93ff8;  1 drivers
+L_0000024a14e94040 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0000024a14df9950_0 .net/2u *"_ivl_4", 0 0, L_0000024a14e94040;  1 drivers
+v0000024a14df9b10_0 .net/s "a", 63 0, v0000024a14e37690_0;  1 drivers
+v0000024a14df9bb0_0 .net/s "b", 63 0, v0000024a14e37730_0;  1 drivers
+v0000024a14e375f0_0 .net "y", 0 0, L_0000024a14e37910;  alias, 1 drivers
+L_0000024a14e37870 .cmp/gt.s 64, v0000024a14e37730_0, v0000024a14e37690_0;
+L_0000024a14e37910 .functor MUXZ 1, L_0000024a14e94040, L_0000024a14e93ff8, L_0000024a14e37870, C4<>;
+    .scope S_0000024a14dfa0c0;
+T_0 ;
+    %vpi_call 2 14 "$dumpfile", "slt_tb.vcd" {0 0 0};
+    %vpi_call 2 15 "$dumpvars", 32'sb00000000000000000000000000000000, S_0000024a14dfa0c0 {0 0 0};
+    %vpi_call 2 16 "$display", "a b | y" {0 0 0};
+    %vpi_call 2 17 "$display", "------------------------------------------------------------" {0 0 0};
+    %pushi/vec4 10, 0, 64;
+    %store/vec4 v0000024a14e37690_0, 0, 64;
+    %pushi/vec4 20, 0, 64;
+    %store/vec4 v0000024a14e37730_0, 0, 64;
+    %delay 100, 0;
+    %vpi_call 2 18 "$display", "%0d %0d | %0d", v0000024a14e37690_0, v0000024a14e37730_0, v0000024a14e377d0_0 {0 0 0};
+    %load/vec4 v0000024a14e377d0_0;
+    %load/vec4 v0000024a14e37690_0;
+    %load/vec4 v0000024a14e37730_0;
+    %cmp/s;
+    %flag_get/vec4 5;
+    %cmp/ne;
+    %jmp/0xz  T_0.0, 6;
+    %vpi_call 2 18 "$fatal", 32'sb00000000000000000000000000000001, "Test 1 failed: %0d < %0d != %0d", v0000024a14e37690_0, v0000024a14e37730_0, v0000024a14e377d0_0 {0 0 0};
+T_0.0 ;
+    %pushi/vec4 4294967295, 0, 32;
+    %concati/vec4 4294967291, 0, 32;
+    %store/vec4 v0000024a14e37690_0, 0, 64;
+    %pushi/vec4 0, 0, 64;
+    %store/vec4 v0000024a14e37730_0, 0, 64;
+    %delay 100, 0;
+    %vpi_call 2 19 "$display", "%0d %0d | %0d", v0000024a14e37690_0, v0000024a14e37730_0, v0000024a14e377d0_0 {0 0 0};
+    %load/vec4 v0000024a14e377d0_0;
+    %load/vec4 v0000024a14e37690_0;
+    %load/vec4 v0000024a14e37730_0;
+    %cmp/s;
+    %flag_get/vec4 5;
+    %cmp/ne;
+    %jmp/0xz  T_0.2, 6;
+    %vpi_call 2 19 "$fatal", 32'sb00000000000000000000000000000001, "Test 2 failed: %0d < %0d != %0d", v0000024a14e37690_0, v0000024a14e37730_0, v0000024a14e377d0_0 {0 0 0};
+T_0.2 ;
+    %pushi/vec4 100, 0, 64;
+    %store/vec4 v0000024a14e37690_0, 0, 64;
+    %pushi/vec4 100, 0, 64;
+    %store/vec4 v0000024a14e37730_0, 0, 64;
+    %delay 100, 0;
+    %vpi_call 2 20 "$display", "%0d %0d | %0d", v0000024a14e37690_0, v0000024a14e37730_0, v0000024a14e377d0_0 {0 0 0};
+    %load/vec4 v0000024a14e377d0_0;
+    %load/vec4 v0000024a14e37690_0;
+    %load/vec4 v0000024a14e37730_0;
+    %cmp/s;
+    %flag_get/vec4 5;
+    %cmp/ne;
+    %jmp/0xz  T_0.4, 6;
+    %vpi_call 2 20 "$fatal", 32'sb00000000000000000000000000000001, "Test 3 failed: %0d < %0d != %0d", v0000024a14e37690_0, v0000024a14e37730_0, v0000024a14e377d0_0 {0 0 0};
+T_0.4 ;
+    %pushi/vec4 4294967295, 0, 32;
+    %concati/vec4 4294967295, 0, 32;
+    %store/vec4 v0000024a14e37690_0, 0, 64;
+    %pushi/vec4 4294967295, 0, 32;
+    %concati/vec4 4294967294, 0, 32;
+    %store/vec4 v0000024a14e37730_0, 0, 64;
+    %delay 100, 0;
+    %vpi_call 2 21 "$display", "%0d %0d | %0d", v0000024a14e37690_0, v0000024a14e37730_0, v0000024a14e377d0_0 {0 0 0};
+    %load/vec4 v0000024a14e377d0_0;
+    %load/vec4 v0000024a14e37690_0;
+    %load/vec4 v0000024a14e37730_0;
+    %cmp/s;
+    %flag_get/vec4 5;
+    %cmp/ne;
+    %jmp/0xz  T_0.6, 6;
+    %vpi_call 2 21 "$fatal", 32'sb00000000000000000000000000000001, "Test 4 failed: %0d < %0d != %0d", v0000024a14e37690_0, v0000024a14e37730_0, v0000024a14e377d0_0 {0 0 0};
+T_0.6 ;
+    %vpi_call 2 22 "$display", "All SLT tests passed." {0 0 0};
+    %vpi_call 2 23 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "ALU\tb\slt\slt_tb.v";
+    "./ALU/source/slt.v";

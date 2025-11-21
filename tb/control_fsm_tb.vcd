@@ -1,0 +1,98 @@
+$date
+	Thu Nov 20 22:08:26 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	10us
+$end
+$scope module control_fsm_tb $end
+$var wire 3 ! state [2:0] $end
+$var wire 1 " memWrite $end
+$var wire 1 # memRead $end
+$var wire 1 $ jump $end
+$var wire 1 % branch $end
+$var wire 1 & RegWrite $end
+$var wire 1 ' RegDst $end
+$var wire 1 ( MemToReg $end
+$var wire 1 ) ALUsrc $end
+$var wire 2 * ALUop [1:0] $end
+$var parameter 3 + DECODE $end
+$var parameter 3 , EXEC $end
+$var parameter 3 - IFETCH $end
+$var parameter 3 . MEM $end
+$var parameter 3 / WB $end
+$var reg 1 0 clk $end
+$var reg 32 1 instr [31:0] $end
+$var reg 1 2 rst $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100 /
+b11 .
+b0 -
+b10 ,
+b1 +
+$end
+#0
+$dumpvars
+12
+b0 1
+00
+b0 *
+0)
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+b0 !
+$end
+#100
+10
+#200
+00
+b1000001000000110110011 1
+02
+#300
+b1 !
+10
+#400
+00
+#500
+b10 *
+1&
+1'
+b10 !
+10
+#510
+1(
+1#
+1)
+b0 *
+0'
+1&
+b10000001010000100000011 1
+#520
+1"
+0#
+1)
+0(
+0&
+b1000001010000110100011 1
+#530
+b1 *
+1%
+0"
+0)
+b1000001000000111100011 1
+#540
+1$
+b0 *
+0%
+b11000011101111 1
+#550

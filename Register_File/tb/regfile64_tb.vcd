@@ -1,0 +1,271 @@
+$date
+	Thu Nov 20 21:17:38 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	10us
+$end
+$scope module regfile64_tb $end
+$var wire 64 ! B [63:0] $end
+$var wire 64 " A [63:0] $end
+$var reg 5 # Ra [4:0] $end
+$var reg 5 $ Rb [4:0] $end
+$var reg 5 % Rw [4:0] $end
+$var reg 64 & W [63:0] $end
+$var reg 1 ' clk $end
+$var reg 1 ( rst $end
+$var reg 1 ) we $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 * \q[0] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 + \q[1] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 , \q[2] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 - \q[3] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 . \q[4] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 / \q[5] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 0 \q[6] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 1 \q[7] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 2 \q[8] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 3 \q[9] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 4 \q[10] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 5 \q[11] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 6 \q[12] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 7 \q[13] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 8 \q[14] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 9 \q[15] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 : \q[16] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 ; \q[17] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 < \q[18] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 = \q[19] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 > \q[20] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 ? \q[21] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 @ \q[22] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 A \q[23] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 B \q[24] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 C \q[25] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 D \q[26] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 E \q[27] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 F \q[28] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 G \q[29] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 H \q[30] [63:0] $end
+$upscope $end
+$upscope $end
+$scope module regfile64_tb $end
+$scope module dut $end
+$var wire 64 I \q[31] [63:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 I
+b0 H
+b0 G
+b0 F
+b0 E
+b0 D
+b0 C
+b0 B
+b0 A
+b0 @
+b0 ?
+b0 >
+b0 =
+b0 <
+b0 ;
+b0 :
+b0 9
+b0 8
+b0 7
+b0 6
+b0 5
+b0 4
+b0 3
+b0 2
+b0 1
+b0 0
+b0 /
+b0 .
+b0 -
+b0 ,
+b0 +
+b0 *
+0)
+1(
+0'
+b0 &
+b0 %
+b0 $
+b0 #
+b0 "
+b0 !
+$end
+#100
+1'
+#200
+0'
+b1000100010001000100010001000100010001000100010001000100010001 &
+b1 %
+1)
+0(
+#300
+b1000100010001000100010001000100010001000100010001000100010001 +
+1'
+#400
+0'
+b10001000100010001000100010001000100010001000100010001000100010 &
+b10 %
+#500
+b10001000100010001000100010001000100010001000100010001000100010 ,
+1'
+#600
+0'
+b1111111111111111111111111111111111111111111111111111111111111111 &
+b0 %
+#700
+1'
+#800
+0'
+b10001000100010001000100010001000100010001000100010001000100010 !
+b10 $
+b1000100010001000100010001000100010001000100010001000100010001 "
+b1 #
+0)
+#900
+1'
+#1000
+0'
+b0 !
+b0 $
+b0 "
+b0 #
+#1100
+1'
+#1200
+0'
